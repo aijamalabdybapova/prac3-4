@@ -1,0 +1,34 @@
+﻿<Window x:Class="PRACTICA.SearchEF"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PRACTICA"
+        mc:Ignorable="d"
+        Title="SearchEF" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="9*" />
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*" />
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="SearchTxt"/>
+            <Button Grid.Column="1" Content="Поиск" Background="#FF00FFCA" FontFamily="Cambria" FontSize="22" Click="Button_Click"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*" />
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <ComboBox x:Name="DirectorsCbx" SelectionChanged="DirectorsCbx_SelectionChanged"/>
+            <Button Content="Очистить" Background="#FF00FFCA" FontFamily="Cambria" FontSize="21" Grid.Column="1" Click="Button_Click_1"  />
+        </Grid>
+        <DataGrid x:Name="MoviesEFs" Grid.Row="2" Background="#FFA2ECDC"/>
+        <Button Content="Назад" HorizontalAlignment="Left" Height="31" Margin="24,301,0,0" Grid.Row="2" VerticalAlignment="Top" Width="97" Background="#FF9F55A7" Foreground="White" FontWeight="Bold" FontFamily="Sitka Banner" FontSize="18" Click="Button_Click_2" />
+    </Grid>
+</Window>

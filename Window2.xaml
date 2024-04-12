@@ -1,0 +1,22 @@
+﻿<Window x:Class="PRACTICA.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PRACTICA"
+        mc:Ignorable="d"
+        Title="Window2" Height="450" Width="800">
+    <Grid >
+        <DataGrid  x:Name="Moviesef" AutoGenerateColumns="False" Background="#FF40806D">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding MovieName}" Header="Название фильма"/>
+                <DataGridTextColumn Binding="{Binding Directors.Surname}" Header="Фамилия режиссера"/>
+                <DataGridTextColumn Binding="{Binding Directors.FirstName}" Header="Имя режиссера"/>
+                <DataGridTextColumn Binding="{Binding Directors.MiddleName}" Header="Отчество режиссера"/>
+                <DataGridTextColumn Binding="{Binding Genres.GenreName}" Header="Жанр"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Назад" HorizontalAlignment="Left" Height="30" Margin="28,380,0,0" VerticalAlignment="Top" Width="106" Background="#FFCE2727" Foreground="White" FontFamily="Cascadia Code" FontSize="18" FontWeight="Bold" Click="Button_Click" />
+        <Button Content="Поиск" HorizontalAlignment="Left" Height="30" Margin="658,380,0,0" VerticalAlignment="Top" Width="106" Background="#FFCE2727" Foreground="White" FontFamily="Cascadia Code" FontSize="18" FontWeight="Bold" Click="Button_Click_1"  />
+    </Grid>
+</Window>

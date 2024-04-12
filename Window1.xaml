@@ -1,0 +1,16 @@
+﻿<Window x:Class="PRACTICA.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PRACTICA"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="MoviesDS" Background="#FFADBF80" Grid.Row="1" />
+        <Button Content="Назад" HorizontalAlignment="Left" Height="31" Margin="40,380,0,0" VerticalAlignment="Top" Width="99" Click="Button_Click" Background="#FF3F7F52" Foreground="White" FontFamily="Book Antiqua" FontSize="20"/>
+        <Button Content="Поиск" HorizontalAlignment="Left" Height="31" Margin="667,380,0,0" VerticalAlignment="Top" Width="99"  Background="#FF3F7F52" Foreground="White" FontFamily="Book Antiqua" FontSize="20" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
